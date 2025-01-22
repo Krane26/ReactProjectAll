@@ -1,0 +1,153 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.product-card {
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.product-details {
+  padding: 15px;
+  text-align: center;
+}
+
+.product-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.product-container {
+  justify-content: space-between;
+  border: none;
+  background: none;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #28a745;
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url(/src/assets/Images/jerseystore.webp);
+  background-size: cover;
+}
+
+.text-center {
+  margin-top: 20px;
+  text-align: center;
+  color: wheat;
+}
+
+h1, h3 {
+  font-weight: 600;
+  color: wheat;
+}
+
+.container {
+  padding: 20px;
+  text-align: center;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  transform: translateY(0);
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.input-group {
+  margin-top: 30px;
+}
+
+.input-group input {
+  border-radius: 20px;
+  padding: 10px 15px;
+  border: 1px black;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.mt-4 h3 {
+  font-weight: 500;
+  color: wheat;
+}
+
+.img-thumbnail {
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.mt-3 img{
+background: none;
+border: none;
+padding: 0;
+margin: 0;
+height: 0%;
+}
+
+.mt-3 img:hover{
+transform: scale(1.1);
+} 
+
+
